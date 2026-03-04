@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #1a1a1a;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .thank-you-container {
+        text-align: center;
+        padding: 50px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        animation: float 3s ease-in-out infinite;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin: 0;
+        background: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+        background-size: 300% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientShift 4s linear infinite;
+        filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));
+    }
+
+    p {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        opacity: 0.8;
+    }
+
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+</style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <h1>THANK YOU!</h1>
+        <p>Thank you Blake, Amanda, and Tonya!
+        <p>
+    </div>
+</body>
+</html>
+
